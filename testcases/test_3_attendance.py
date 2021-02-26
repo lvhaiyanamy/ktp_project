@@ -20,6 +20,17 @@ from datas.join_attendance_data import JoinAttendanceData
 
 
 class TestAttendance:
+    @allure.title('考勤失败')
+    @pytest.mark.parametrize('cases', JoinAttendanceData.error_case_data)
+    def test_join_attendance_failure(self, cases, stu_login_fixture):
+        driver = stu_login_fixture
+        # 学生加入考勤
+        index_page = IndexPage(driver)
+        index_page.join_attendance(cases['attendance_code'])
+        time.sleep(2)
+        actual = index_page.get_join_attendance_error()
+        assert actual == cases['expected']
+
     @allure.title('考勤成功')
     def test_attendance_success(self, teacher_login_fixture, stu_login_fixture):
         driver = teacher_login_fixture
@@ -45,13 +56,4 @@ class TestAttendance:
         else:
             log.info('【考勤成功的用例】------执行通过')
 
-    @allure.title('考勤失败')
-    @pytest.mark.parametrize('cases', JoinAttendanceData.error_case_data)
-    def test_join_attendance_failure(self, cases, stu_login_fixture):
-        driver = stu_login_fixture
-        # 学生加入考勤
-        index_page = IndexPage(driver)
-        index_page.join_attendance(cases['attendance_code'])
-        time.sleep(2)
-        actual = index_page.get_join_attendance_error()
-        assert actual == cases['expected']
+
