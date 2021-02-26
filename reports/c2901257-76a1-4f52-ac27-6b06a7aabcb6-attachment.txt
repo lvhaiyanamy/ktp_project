@@ -1,0 +1,15 @@
+INFO     mylog:base_page.py:110 往输入框--【登录页面_账号输入】--输入值成功
+INFO     mylog:base_page.py:110 往输入框--【登录页面_密码输入】--输入值成功
+INFO     mylog:base_page.py:92 点击元素--【登录页面_登录按钮】--成功
+INFO     mylog:base_page.py:92 点击元素--【首页_学生点击课程名称】--成功
+ERROR    mylog:base_page.py:179 等待--【课程页面_学生点击立即签到】--元素可见失败
+ERROR    mylog:base_page.py:180 Message: 
+Traceback (most recent call last):
+  File "E:\py-35\ktp_project2\common\base_page.py", line 176, in wait_element_visibility
+    expected_conditions.visibility_of_element_located(loc)
+  File "D:\py3.7.3\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+INFO     mylog:base_page.py:322 对-【课程页面_学生点击立即签到】--操作进行截图--成功
+INFO     mylog:base_page.py:323 图片名为E:\py-35\ktp_project2\error_images\2021-02-26_19_13_27_课程页面_学生点击立即签到.png

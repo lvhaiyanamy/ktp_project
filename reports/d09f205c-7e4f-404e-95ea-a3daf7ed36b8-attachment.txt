@@ -1,0 +1,8 @@
+INFO     mylog:base_page.py:110 往输入框--【登录页面_账号输入】--输入值成功
+INFO     mylog:base_page.py:110 往输入框--【登录页面_密码输入】--输入值成功
+INFO     mylog:base_page.py:92 点击元素--【登录页面_登录按钮】--成功
+INFO     mylog:base_page.py:92 点击元素--【首页_学生加入课程】--成功
+INFO     mylog:base_page.py:110 往输入框--【首页_学生输入加课码】--输入值成功
+INFO     mylog:base_page.py:92 点击元素--【首页_加入按钮】--成功
+INFO     mylog:base_page.py:184 等待--【首页_加课失败的错误提示】--元素可见成功
+INFO     mylog:test_2_course.py:58 ————>执行通过

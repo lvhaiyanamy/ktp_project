@@ -1,0 +1,29 @@
+INFO     mylog:base_page.py:110 往输入框--【登录页面_账号输入】--输入值成功
+INFO     mylog:base_page.py:110 往输入框--【登录页面_密码输入】--输入值成功
+INFO     mylog:base_page.py:92 点击元素--【登录页面_登录按钮】--成功
+INFO     mylog:base_page.py:110 往输入框--【登录页面_账号输入】--输入值成功
+INFO     mylog:base_page.py:110 往输入框--【登录页面_密码输入】--输入值成功
+INFO     mylog:base_page.py:92 点击元素--【登录页面_登录按钮】--成功
+INFO     mylog:base_page.py:92 点击元素--【首页_老师点击创建课程】--成功
+INFO     mylog:base_page.py:92 点击元素--【首页_老师点击创建】--成功
+INFO     mylog:base_page.py:110 往输入框--【首页_老师输入课程名称】--输入值成功
+INFO     mylog:base_page.py:92 点击元素--【首页_老师点击创建课程按钮】--成功
+ERROR    mylog:base_page.py:158 获取元素--【首页_获取课程加课码】--属性值失败
+ERROR    mylog:base_page.py:159 Message: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title="测试课程3129"]//..//..//div[@class="down-menu"]//span"}
+  (Session info: chrome=88.0.4324.96)
+  (Driver info: chromedriver=71.0.3578.137 (86ee722808adfe9e3c92e6e8ea746ade08423c7e),platform=Windows NT 10.0.17134 x86_64)
+Traceback (most recent call last):
+  File "E:\py-35\ktp_project2\common\base_page.py", line 156, in get_element_attribute
+    res = self.driver.find_element(*loc).get_attribute(attr)
+  File "D:\py3.7.3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "D:\py3.7.3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\py3.7.3\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title="测试课程3129"]//..//..//div[@class="down-menu"]//span"}
+  (Session info: chrome=88.0.4324.96)
+  (Driver info: chromedriver=71.0.3578.137 (86ee722808adfe9e3c92e6e8ea746ade08423c7e),platform=Windows NT 10.0.17134 x86_64)
+
+INFO     mylog:base_page.py:322 对-【首页_获取课程加课码】--操作进行截图--成功
+INFO     mylog:base_page.py:323 图片名为E:\py-35\ktp_project2\error_images\2021-02-26_19_11_13_首页_获取课程加课码.png
