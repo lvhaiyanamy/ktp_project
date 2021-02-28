@@ -163,7 +163,7 @@ class BasePage:
             log.info('获取元素--【{}】--属性值成功'.format(desc))
         return res
 
-    def wait_element_visibility(self, loc, desc=None, timeout=10):
+    def wait_element_visibility(self, loc, desc=None, timeout=15):
         """
         等待元素可见
         :param loc: 元素定位器

@@ -84,7 +84,7 @@ class IndexPage(BasePage):
 
     def attend_attence(self):
         self.click_element(IndexLocator.attendance_loc, '课程页面_老师点击考勤')
-        self.switch_to_iframe_loc(IndexLocator.attend_iframe_loc, '课程页面_考勤iframe')
+        self.switch_to_iframe_loc(IndexLocator.pop_iframe_loc, '课程页面_考勤iframe')
 
     def create_attendance(self):
         """

@@ -31,8 +31,6 @@ class IndexLocator:
     # 老师：课程定位
     course_loc = (By.XPATH, '//a[@title="Renee Brooks"]')
     # 切换iframe
-    attend_iframe_loc = (By.XPATH, '//iframe[contains(@id,"layui-layer-content")]')
-    # 切换iframe
     pop_iframe_loc=(By.XPATH,'//iframe[@id="layui-layer-content1"]')
     # 老师：考勤定位
     attendance_loc = (By.XPATH, '//i[@class="iconfont iconkaoqin"]/..')
